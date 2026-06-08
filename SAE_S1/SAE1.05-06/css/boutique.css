@@ -1,0 +1,203 @@
+body {
+    padding:0;
+    margin: 0;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+#header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#header #logo {
+    height: 50px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    width: auto;
+}
+
+.menu-deroulant {
+    position: relative;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    position: fixed;     
+    top: 60px;           
+    left: 0;             
+    opacity: 0;
+    background-color: black;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+    pointer-events: none;   
+}
+
+.menu-deroulant:hover .menu {
+    opacity: 1;
+    pointer-events: auto;   
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block !important;
+    width: 100%;
+    padding: 10%;
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+#shop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#shop>label {
+    height: 10%;
+    flex-basis: 30%;
+    text-align: center;
+    margin-bottom: 15px;
+
+
+}
+
+#cr, #bs, #bb, #coc {
+    display: contents;
+}
+
+
+
+.toggle {
+  display: none;
+}
+
+.btn {
+
+    display: inline-block;
+    padding: 7px;
+    border-radius: 15px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+    margin-inline: 5px;
+    box-shadow: 1px 1px 5px grey;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.toggle:checked + .btn {
+  background: grey;
+}
+
+#togglebs:checked ~ .articlebs{
+    display:none
+}
+#togglecr:checked ~ .articlecr{
+    display:none
+}
+#togglecoc:checked ~ .articlecoc{
+    display:none
+}
+
+
+.article, .articlebs, .articlecr, .articlecoc{
+    background-color: white;
+    border-radius: 6%;
+    width: 250px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px gray ;
+    margin-inline: 10px;
+    margin-top: 20px;
+}
+
+.article>img , .articlebs>img, .articlecr>img, .articlecoc>img{
+    height: 140px;
+    margin: 10px;
+    border-radius: 6%;
+}
+
+#gems {
+    height: 70px;
+    margin: 50px;
+}
+
+.article p, .articlebs p, .articlecr p, .articlecr p, .articlecoc p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:10px;
+}
+
+.acheter {
+    display: flex;
+    align-items: center;
+    background-color: greenyellow;
+    border: none;
+    box-shadow: 1px 1px 5px grey ;
+    border-radius: 45px;
+    height: 35px;
+}
+
+.article a img, .articlebs a img,  .articlecr a img, .articlecoc a img {
+    width: 15px;
+    margin: 5px;
+}
+
+.articlebs a , .articlecr a, .articlecoc a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.4%;
+    font-size: 90%;
+}
+
+#jeux a {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    padding: 7px;
+    box-shadow: 1px 1px 5px grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-inline: 5px;
+}
+
+
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

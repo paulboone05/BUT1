@@ -1,0 +1,172 @@
+body {
+    padding:0;
+    margin: 0;
+    height: 100vh;
+}
+
+#header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#header #logo {
+    height: 50px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    width: auto;
+}
+
+.menu-deroulant {
+    position: relative;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    position: fixed;     
+    top: 60px;           
+    left: 0;             
+    opacity: 0;
+    background-color: black;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+    pointer-events: none;   
+}
+
+.menu-deroulant:hover .menu {
+    opacity: 1;
+    pointer-events: auto;   
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block !important;
+    width: 100%;
+    padding: 10%;
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+#page {
+    width: 100vw;
+    height: 60vh;
+    background: linear-gradient(135deg, #002c61 0%, #0063bd 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#barre-haut {
+    position: absolute;
+    top: 20px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bouton-haut {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.15);
+    padding: 10px 16px;
+    border-radius: 12px;
+    transition: background 0.3s;
+}
+
+.bouton-haut:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+#carte-profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+#avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#identite {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#logo-id {
+    background-color: white;
+    color: #0063bd;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+#section-blanche {
+    background-color: white;
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#zone-elixir {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 22px;
+}
+
+#image-elixir {
+    width: 55px;
+    height: 55px;
+}
+
+#bouton-principal {
+    width: 260px;
+    height: 55px;
+    font-size: 22px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#bouton-principal:hover {
+    background-color: #949494;
+    transform: scale(1.05);
+}

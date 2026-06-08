@@ -1,0 +1,177 @@
+body {
+    padding:0;
+    margin: 0;
+    height: 100vh;
+    background-image: url("../img/covoiturage.png");  
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#header #logo {
+    height: 50px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    width: auto;
+}
+
+#menuButtons {
+    display: flex;
+    flex-direction: row ;  
+    align-items: center;
+    justify-content: center;
+}
+
+#bouton_connexion {
+  width: 175px;
+  height: 50px;
+  font-size: 24px;
+  background-color: #ffffff;   
+  color: rgb(0, 0, 0);             
+  border: none;             
+  border-radius: 10px;
+  cursor: pointer;          
+  transition: background 0.3s;
+  margin-bottom: 2px;
+}
+
+#bouton_connexion:hover {
+    background-color: #949494;
+}
+
+.menu-deroulant {
+    position: relative;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    position: fixed;     
+    top: 60px;           
+    left: 0;             
+    opacity: 0;
+    background-color: black;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+    pointer-events: none;   
+}
+
+.menu-deroulant:hover .menu {
+    opacity: 1;
+    pointer-events: auto;   
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block !important;
+    width: 100%;
+    padding: 10%;
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 50px;
+}
+
+#content>h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.trajet{
+    background-color: white;
+    border-radius: 6%;
+    width: 250px;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    box-shadow: 1px 1px 5px gray ;
+    margin-inline: 10px;
+    margin-top: 20px;
+    transition: transform 0.2s;
+
+}
+
+.trajet>img{
+    height: 140px;
+    margin: 5px;
+    border-radius: 6%;
+}
+
+.trajet>h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.trajet>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold
+}
+
+.trajet>*{
+    margin-left: 20px;
+}
+
+.trajet:hover{
+    transform: scale(1.05);
+}
+#search_bar {
+    padding: 14px 20px;
+    width: 600px;
+    border: 1px solid #fafafa;
+    border-radius: 10px;
+    outline:none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+#search_btn {
+    border:none;
+    background-color: #ffffff;
+}
+
+#search_btn #search_img {
+    height: 26px;
+}
+
+#destination {
+    font-size: 24px;
+    outline:none;
+    border:none;
+    background-color: #fafafa;
+    width: 570px;
+}
+
+#destination:focus {
+    border-color: #000;
+}

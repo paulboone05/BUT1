@@ -1,0 +1,112 @@
+body {
+    padding:0;
+    margin: 0;
+    height: 100vh;
+    background-image: url("../img/covoiturage.png");  
+    background-size: cover;      
+    background-position: center;
+}
+
+#header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#header #logo {
+    height: 50px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    width: auto;
+}
+
+.menu-deroulant {
+    position: relative;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    position: fixed;     
+    top: 60px;           
+    left: 0;             
+    opacity: 0;
+    background-color: black;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+    pointer-events: none;   
+}
+
+.menu-deroulant:hover .menu {
+    opacity: 1;
+    pointer-events: auto;   
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block !important;
+    width: 100%;
+    padding: 10%;
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+#page {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: 100vw;
+    height: 100vh;
+    position: relative;     
+}
+
+#bouton {
+  width: 245px;
+  height: 50px;
+  font-size: 24px;
+  background-color: #333333;   
+  color: white;             
+  border: none;             
+  border-radius: 10px;
+  cursor: pointer;          
+  transition: background 0.3s;
+  margin-bottom: 2px;
+}
+
+#content{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;     
+  width: 350px;          
+  max-width: 90vw;       
+  height: auto;          
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 30px 40px;    
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  gap: 15px;           
+}
+
+#annonce_publiée {
+    font-weight: 500;;
+}

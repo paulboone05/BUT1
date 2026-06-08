@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Louer mon véhicule</title>
+    <link rel="stylesheet" href="css/louer_vehicule.css">
+</head>
+<body>
+    <div id="header">
+        <div class="menu-deroulant">
+            <img src="img/menu_deroulant.png" alt="menu déroulant" id="menu">
+            <div class="menu">
+                <a href="emprunter_vehicule.html">Emprunter un véhicule</a>
+                <a href="louer_vehicule.html">Louer mon véhicule</a>
+                <a href="proposer_covoiturage.html">Proposer un covoiturage</a>
+                <a href="rechercher_covoiturage.html">Rechercher un covoiturage</a>
+                <a href="boutique.html">Boutique</a>
+                <a href="mon_compte.html">Mon compte</a>
+                <a href="a_propos.html">À propos</a>
+            </div>
+        </div>
+        <div class="logo-container">
+            <a href="accueil.html">
+                <img src="img/logo.png" alt="logo" id="logo">
+            </a>
+        </div>
+        <div>
+            <a href="mon_compte.html">
+                <img src="img/compte.png" alt="compte" id="compte">
+            </a>
+        </div>
+    </div>
+    <div id="page">
+        <div id="formulaire">
+            <h1>Louer mon véhicule</h1>
+            <input type="text" placeholder="Nom et prénom">
+            <input type="text" placeholder="Nom de l’annonce">
+            <select>
+                <option value="">Type de véhicule</option>
+                <option>Trottinette</option>
+                <option>Trottinette électrique</option>
+                <option>Vélo</option>
+                <option>Vélo électrique</option>
+                <option>Voiture</option>
+            </select>  
+            <label class="image-box" for="image">
+                Cliquer pour ajouter une image
+            </label>
+            <input type="file" id="image" accept="image/*" hidden>
+            <label class="label-date">Début de la location</label>
+            <input type="datetime-local">
+            <label class="label-date">Fin de la location</label>
+            <input type="datetime-local">
+            <input type="text" placeholder="Emplacement du véhicule">
+            <a href="annonce_publiée.html">
+                <button id="bouton">Publier l’annonce</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
